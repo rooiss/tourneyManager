@@ -1,12 +1,12 @@
 import React from 'react'
-import './App.css'
-import { Home } from './component/Home'
+import { Home } from './components/Home'
+import { TournamentProvider } from './providers/TournamentProvider'
 
 function App() {
   return (
-    <div className="App">
+    <TournamentProvider>
       <Home />
-    </div>
+    </TournamentProvider>
   )
 }
 
